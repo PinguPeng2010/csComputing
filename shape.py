@@ -29,3 +29,6 @@ class Shape():
         forward(50)
 
 
+# Make Circle definition
+# Create definition for generic shape, with sides n
+# done!
