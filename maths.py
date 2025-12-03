@@ -11,6 +11,15 @@ def cuboidvolume(a,b,c):
     cuboidv=(a*b*c)
     print("The volume of the cuboid is",cuboidv)
 
+def isPrime(n):
+    n = int(n)
+    i = 2
+    while n > 1:
+        while n % i == 0:
+            print(i, end=" ")
+            n //= i
+        i += 1
+
 def two_digits_and_squares():
     squares = []
     for x in range(100):
@@ -63,6 +72,10 @@ def main():
 
             elif args[0] == 'cylinder':
                 cylinder(args[1], args[2])
+            
+            elif args[0] == 'prime':
+                isPrime(args[1])
+            
             
             
 
