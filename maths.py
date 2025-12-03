@@ -173,8 +173,8 @@ def main():
             
             
             
-    except:
-        print('lol')
+    except Exception as e:
+        print(e)
             
 
         
