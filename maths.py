@@ -35,6 +35,12 @@ def isSquare(x):
     else:
         print(False)
  
+def cylinder(d,h):
+    area = ((d/2)**2)*3
+    volume = area * h
+    print('area of cross section', area, 'cm^2')
+    print('volume is:', volume, 'cm^3')
+    print('capacity is:', volume, 'ml')
 
 
 
@@ -48,10 +54,16 @@ def main():
             
             if args[0] == 'albert':
                 makealbertpresident(2, -3, 0.5, -12)
+
             elif args[0] == 'digitSquare':
                 two_digits_and_squares()
+
             elif args[0] == 'isSquare':
                 isSquare(args[1])
+
+            elif args[0] == 'cylinder':
+                cylinder(args[1], args[2])
+            
             
 
         
